@@ -5,12 +5,15 @@ const ProjectList = ({projects}) => (
     <div className='project-list section'>
      {projects && projects.map(project => {
          return (
-           <Link  key={project.id} to={`/project/${project.id}`}>
+           
              <ProjectSummary key={project.id} project={project} />
-           </Link>
+        
          )
      })}
     </div>
 );
 
 export default ProjectList;
+
+//  <Link  key={project.id} to={`/project/${project.id}`}>
+//</Link>

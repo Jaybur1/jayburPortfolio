@@ -5,7 +5,9 @@ import { Redirect } from 'react-router-dom';
 class CreateProject extends Component {
   state = {
     title: "",
-    content: ""
+    gitRepo: "",
+    demo:"",
+    picUrl: '',
   };
 
   handleChange = e => {
@@ -16,7 +18,7 @@ class CreateProject extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.props.createProject(this.state)
-    this.props.history.push('/');
+    this.props.history.push('/dashboard');
   };
   render() {
     const { auth } = this.props;
@@ -35,12 +37,30 @@ class CreateProject extends Component {
             />
           </div>
           <div className="input-field">
-            <label htmlFor="content">Project Content</label>
-            <textarea
-              className="materialize-textarea"
-              id="content"
+            <label htmlFor="gitRepo">Git</label>
+            <input
+              type="text"
+              id="gitRepo"
               onChange={this.handleChange}
-              value={this.state.lastName}
+              value={this.state.firstName}
+            />
+          </div>
+          <div className="input-field">
+            <label htmlFor="demo">Demo</label>
+            <input
+              type="text"
+              id="demo"
+              onChange={this.handleChange}
+              value={this.state.firstName}
+            />
+          </div>
+          <div className="input-field">
+            <label htmlFor="picUrl">PicUrl</label>
+            <input
+              type="text"
+              id="picUrl"
+              onChange={this.handleChange}
+              value={this.state.firstName}
             />
           </div>
           <div className="input-field">
