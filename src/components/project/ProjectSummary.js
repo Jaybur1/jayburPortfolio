@@ -1,20 +1,36 @@
-import React from 'react';
-import moment from 'moment';
+import React from "react";
+//import moment from "moment";
 
-
-const ProjectSummary = ({project}) =>{ 
+const ProjectSummary = ({ project }) => {
   console.log(project);
   return (
-  <div className='card z-depth-0 project-summary' >
-    <div className='card-contant grey-text text-darken-3'>
-      <span className='card-title'>{project.title}</span>
-      <p>Posted By {project.authorFirstName} {project.authorLastName}</p>
-      <img className='responsive-img' src={project.picUrl} alt='applogo'/>
-      <a href={project.gitRepo} target='_blank' rel="noopener noreferrer">GitHub</a><br />
-      <a href={project.demo} target='_blank'rel="noopener noreferrer">demo</a>
-      <p className='grey-text'>{moment(project.createdAt.toDate()).calendar()}</p>
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img
+              className="responsive-img card-img"
+              src={project.picUrl}
+              alt="applogo"
+            />
+            <span class="card-title black-text">{project.title}</span>
+          </div>
+          {/* <div class="card-content">
+           <p className="grey-text">
+              {moment(project.createdAt.toDate()).calendar()}
+  </p>
+          </div>*/}
+          <div class="card-action">
+            <a className='blue-text text-darken-2 link-btn' href={project.gitRepo} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a className='blue-text text-darken-2 link-btn' href={project.demo} target="_blank" rel="noopener noreferrer">
+              demo
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-);
-}
+  );
+};
 export default ProjectSummary;

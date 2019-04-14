@@ -12,7 +12,7 @@ const Notifications = props => {
             {notifications &&
               notifications.map(data => (
                 <li key={data.id}>
-                  <span>{data.user} </span>
+                  <span className="blue-text">{data.user} </span>
                   <span>{data.content}</span>
                   <div className='grey-text note-date'>
                   {moment(data.time.toDate()).fromNow()}</div>
