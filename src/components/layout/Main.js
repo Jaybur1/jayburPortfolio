@@ -23,7 +23,7 @@ const Main = () => {
           </a>
           {/*linkedin */}
           <a
-            href="https://www.linkedin.com/in/jay-burbyga-b21409156/"
+            href="https://www.linkedin.com/in/jayburbyga/"
             target="_blank"
             rel="noopener noreferrer"
           >
