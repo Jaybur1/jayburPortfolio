@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
+
+
 class Dashboard extends Component {
   render() {
     const { projects, auth, notifications } = this.props;
@@ -14,7 +16,7 @@ class Dashboard extends Component {
         <div className="dashboard container">
           <div className="row">
             <div className="col s12 m6">
-              <ProjectList projects={projects} />
+              <ProjectList projects={projects} dashboard />
             </div>
             <div className="col s12 m5 offset-m1">
               <Notifications notifications ={ notifications }/>

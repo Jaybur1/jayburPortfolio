@@ -3,12 +3,16 @@ import React from "react";
 const Contacts = () => {
   return (
     <div className="contact-page">
-      <h1 className='center'style={{ fontWeight: "bold" }}>Contact me</h1>
+      <h1 className="center" style={{ fontWeight: "bold" }}>
+        Contact me
+      </h1>
       <div className="contacts">
-        <i class="fas fa-phone-square">
+        <span className="contacts">
+          <i class="fas fa-phone-square"></i>
           <span className="contact-content"> +1(343)-204-5511</span>
-        </i>
-        <i class="fas fa-envelope-square">
+        </span>
+        <span className="contacts">
+          <i class="fas fa-envelope-square"></i>
           <a
             href="mailto:jayburbyga@gmail.com"
             style={{
@@ -19,18 +23,19 @@ const Contacts = () => {
           >
             <span className="contacts-content"> jayburbyga@gmail.com</span>
           </a>
-        </i>
-        <i class="fab fa-skype">
-          <span className="contacts-content" style={{ fontWeight: "bold" }}>
-            {" "}
-            jekaburbyga
-          </span>
-        </i>
-        <i class="fab fa-facebook-messenger">
-          <span className="contacts-content" style={{ fontWeight: "bold" }}>
-            Jay Burbyga
-          </span>
-        </i>
+        </span>
+        <span className="contacts">
+        <i class="fab fa-skype"></i>
+        <span className="contacts-content" style={{ fontWeight: "bold" }}>
+          jekaburbyga
+        </span>
+        </span>
+        <span className="contacts">
+        <i class="fab fa-facebook-messenger"></i>
+        <span className="contacts-content" style={{ fontWeight: "bold" }}>
+          Jay Burbyga
+        </span>
+        </span>
       </div>
     </div>
   );

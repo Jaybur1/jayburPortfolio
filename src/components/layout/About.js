@@ -1,7 +1,9 @@
 import React from "react";
+import Contacts from "./Contacts"
 
 const About = () => {
   return (
+    <>
     <div className="about-page">
       <h1 className="quote center">"Try to be better then tommorow self!"</h1>
       <div className="about-content">
@@ -10,8 +12,7 @@ const About = () => {
             Who am I:
           </b>
           <br />
-          Hi! My name is Evgeniy Burbyga , but you can call me Jay (my wife and
-          mom calling me that). I am 28 years old, was born in the Ukraine ,
+          Hi! My name is Evgeniy Burbyga , but you can call me Jay. I was born in the Ukraine ,
           moved to Israel with my family at the age of 6 , and then moved to
           Canada with my wife in 2017. I have a cat named Muffin and I play
           drums since 2004.
@@ -61,6 +62,8 @@ const About = () => {
         </p>
       </div>
     </div>
+    <Contacts />
+    </>
   );
 };
 

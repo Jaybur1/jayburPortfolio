@@ -16,6 +16,9 @@
     "redux-firestore": "^0.7.3",
     "redux-thunk": "^2.3.0"
   },
+  "engines": {
+    "node": "12"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,4 +34,5 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+
 }

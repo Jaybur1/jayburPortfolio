@@ -11,7 +11,7 @@ const Main = () => {
       <header>Hi There! I'm Jay</header>
       <div className="banner-text">
         <h1>Web Developer</h1>
-        <p>HTML/CSS | JavaScript | ReactJs | Express | Ruby/Rails </p>
+        <p>HTML/CSS | JavaScript | ReactJs | Express | Ruby/Rails | Node.js</p>
         <div className="social-links">
           {/*fcc */}
           <a
@@ -35,7 +35,7 @@ const Main = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github" />
+            <i className="fab fa-github" />
           </a>
         </div>
       </div>

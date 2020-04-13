@@ -35,12 +35,17 @@ textarea.materialize-textarea:focus:not([readonly]){
 }
 
 .project-list {
-  margin: 20px;
+  position:relative;
+  left:50%;
+  top:2em;
+  transform: translateX(-50%);
+  border-radius: 5px;
   padding-bottom: 20px;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-template-rows: repeat(2, 1fr);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -130,7 +135,7 @@ box-shadow: 5px 5px 15px black;
 }
 
 .social-links {
-  display: grid;
+  display: flexbox;
   grid-gap: 6px;
   grid-template-columns: repeat(auto-fill, minmax(5.5em, 1fr));
   width: 60%;
@@ -154,7 +159,8 @@ box-shadow: 5px 5px 15px black;
 }
 
 .about-page {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
   width: 80%;
   height: 70%;
   margin: auto;
@@ -184,11 +190,11 @@ box-shadow: 5px 5px 15px black;
   font-family: 'KoHo', sans-serif;
 }
 .contact-page {
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 30%;
-  height: 40%;
+  display:flexbox;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
   margin: auto;
-  margin-top: 30vh;
   border-radius: 10px;
   box-shadow: 10px 10px 30px black;
 }
@@ -199,26 +205,38 @@ box-shadow: 5px 5px 15px black;
   text-align: center;
 }
 .contacts {
-  display: grid;
-  grid-gap: 10px;
+  display:flexbox;
+  text-align: center;
+  font-size: 1.2em;
   font-family: 'KoHo', sans-serif;
-  font-size: 30px;
-  text-align: left;
-  margin-left:15px;
-  padding-bottom: 15px;
+  margin: 20px;
 }
 
 @media screen and (max-device-width: 480px) {
   
-  .contact-page {
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 30px black;
-    margin-right:80px;
-  }
   .contacts {
-    font-size: 90%;
-    margin-bottom:15px;
+    display:grid;
+    font-size: 0.8rem;
   }
+
+}
+
+@media screen and (min-device-width: 500px) {
+  
+  .white {
+    width:450px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+  }
+}
+
+.deleteIcon {
+  position: absolute;
+  top:0;
+  margin: 0.5em;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
 }

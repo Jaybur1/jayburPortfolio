@@ -37,11 +37,6 @@ class Menu extends Component {
               About
             </NavLink>
           </li> 
-          <li>
-            <NavLink className="waves-effect blue-text text-darken-2" to="/contacts">
-              Contacts
-            </NavLink>
-          </li>
          {auth.uid && <li><NavLink to="/create-project">New Project</NavLink></li>}
          {auth.uid && <li><NavLink to='/dashboard'>Dashboard</NavLink></li>}
         </ul>
