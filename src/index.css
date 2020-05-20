@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('https://stmed.net/sites/default/files/building-wallpapers-28464-2294147.jpg') fixed;
+  background-size: cover ;
   overflow-x: hidden;
 }
 
@@ -53,6 +54,7 @@ textarea.materialize-textarea:focus:not([readonly]){
   width: 200px;
   transition: 1s;
   border-radius: 15px;
+  text-shadow: 1px 1px 1px  azure;
 }
 
 .card:hover {

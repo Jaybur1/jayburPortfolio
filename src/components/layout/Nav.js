@@ -12,7 +12,7 @@ const Nav = props => {
     <nav className="nav-wrapper z-depth-5 transparent">
       <div className="container">
         <Link to="/" className="brand-logo left">
-          <img src={window.location.origin + '/img/logoW.png'} className='responsive-img' alt="logo " width='80px'/>
+          <img src={window.location.origin + '/img/logoW.png'} className='' alt="logo " width='80px'/>
         </Link>
         {auth.uid ? <SignedInLinks className='right'/> : <SignedOutLinks className='right' />}
       </div>
