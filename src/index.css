@@ -240,3 +240,8 @@ box-shadow: 5px 5px 15px black;
 .deleteIcon:hover {
   cursor: pointer;
 }
+
+
+img.responsive-img {
+  height: 200px !important;
+}
